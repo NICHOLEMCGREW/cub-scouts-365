@@ -1,12 +1,21 @@
-import React from 'react'
+// Button.jsx
+import React from 'react';
 
-const Button = (props) => {
+const Button = ({ children, buttonStyle }) => {
+  const mainBlueColor = '#003f87';
+  const yellowColor = '#ffb225';
+
+  const buttonStyles = {
+    'btn-outline': `border border-white text-white hover:bg-white hover:text-${yellowColor} py-2 px-4 rounded-md font-semibold`,
+    // Add more styles as needed
+  };
+
   return (
-    <button className='bg-indigo-600 text-white font-[Poppins] py-2 px-6 rounded md:ml-8 hover:bg-indigo-400 
-    duration-500'>
-      {props.children}
+    <button className={`btn ${buttonStyles[buttonStyle]}`} type="button">
+      {children}
     </button>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;
+
