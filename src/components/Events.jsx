@@ -1,35 +1,34 @@
+// Events.jsx
 import React from 'react';
+import { eventsData } from './index';
 
-const eventsData = [
-  {
-    id: 1,
-    title: 'Camping Trip',
-    date: 'April 15, 2024',
-    imageUrl: 'url_to_image1.jpg',
-  },
-  {
-    id: 2,
-    title: 'Pinewood Derby',
-    date: 'May 5, 2024',
-    imageUrl: 'url_to_image2.jpg',
-  },
-  // Add more events as needed
-];
+const EventCard = ({ event }) => (
+  <div style={{ maxWidth: '500px' }} className="mb-6 p-4 bg-white rounded-lg shadow-md">
+    <p className="text-lg font-bold mb-2">{event.date}</p>
+    <img src={event.image} alt={event.title} className="w-full h-40 object-cover mb-2" />
+    <p className="text-lg mb-2">{event.title}</p>
+    <p className="text-sm mb-4">{event.location}</p>
+    <a href={event.facebookEventUrl} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
+      View Facebook Event
+    </a>
+  </div>
+);
 
 const Events = () => {
+  const currentDate = new Date();
+  const pastEventsData = eventsData.filter((event) => new Date(event.date) < currentDate);
+
   return (
-    <div className="p-8">
-      <h2 className="text-2xl font-bold mb-4">Top Cub Scouts Events</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {eventsData.map(event => (
-          <div key={event.id} className="bg-white p-4 rounded-lg shadow-md">
-            <img src={event.imageUrl} alt={event.title} className="w-full h-40 object-cover mb-4" />
-            <div>
-              <h3 className="text-lg font-bold mb-2">{event.title}</h3>
-              <p className="text-sm text-gray-600">{event.date}</p>
-            </div>
-          </div>
-        ))}
+    <div className="p-6">
+      {/* Display past events */}
+      <div className="past-events h-full">
+        
+        <h2 className="text-3xl font-bold mb-4 text-gray-800 text-center">Past Events</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {pastEventsData.map((event) => (
+            <EventCard event={event} key={event.date} />
+          ))}
+        </div>
       </div>
     </div>
   );

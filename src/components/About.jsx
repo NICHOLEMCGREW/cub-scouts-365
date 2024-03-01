@@ -1,26 +1,31 @@
-// About.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
+import zoo from '../assets/imgs/zoo.jpg';
+import splashPad from '../assets/imgs/splashPad.jpg';
+import popcorn from '../assets/imgs/popcorn.jpg';
+import parade from '../assets/imgs/parade.jpg';
 
 const About = () => {
   return (
-    <section className="flex flex-wrap items-center">
-      {/* Text Section */}
-      <div className="w-full md:w-1/2 p-4">
-        <h2 className="text-3xl font-bold mb-4">About Cub Scouts Pack 365</h2>
-        <p className="text-lg">
-          Insert your Cub Scouts Pack 365 description here. Provide information about the history,
-          mission, and values of the pack. You can customize this text to suit your needs.
-        </p>
-      </div>
-
-      {/* Image Collage Section */}
-      <div className="w-full md:w-1/2 p-4 flex justify-center items-center">
-        <div className="grid grid-cols-2 gap-4">
-          {/* Replace these image URLs with your own */}
-          <img src="image1.jpg" alt="Cub Scout 1" className="w-full h-32 object-cover" />
-          <img src="image2.jpg" alt="Cub Scout 2" className="w-full h-32 object-cover" />
-          <img src="image3.jpg" alt="Cub Scout 3" className="w-full h-32 object-cover" />
-          <img src="image4.jpg" alt="Cub Scout 4" className="w-full h-32 object-cover" />
+    <section className="about text-center">
+      <div className="about-container flex justify-center items-center">
+        <div className="about-content pr-8 text-center">
+      <h1 className="text-4xl font-bold mb-4">About Us</h1>
+          <div className="line mb-7 w-16 border-t-4 border-primary-color mx-auto"></div>
+          <p className="ml-20">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, cumque voluptatibus incidunt architecto
+            id magni, maxime sed, aliquam voluptatum voluptates quas possimus. Inventore voluptas nostrum fuga accusantium
+            debitis dolorem labore.
+          </p>
+          <Link to="/learn-more" className="ctn inline-block px-6 py-2 bg-primary-color text-white rounded-full">
+            Learn More
+          </Link>
+        </div>
+        <div className="image-grid grid grid-cols-2 gap-5 mr-40">
+          <img src={zoo} alt="Zoo" className="max-w-full  w-[800px]" />
+          <img src={splashPad} alt="Splash Pad" className="max-w-full w-[500px]" />
+          <img src={popcorn} alt="Popcorn" className="max-w-full w-[500px]" />
+          <img src={parade} alt="Parade" className="max-w-full w-[500px]" />
         </div>
       </div>
     </section>
