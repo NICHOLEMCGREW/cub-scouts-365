@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import zoo from '../assets/imgs/zoo.jpg';
-import splashPad from '../assets/imgs/splashPad.jpg';
+import hike from '../assets/imgs/hike.jpg';
 import popcorn from '../assets/imgs/popcorn.jpg';
 import parade from '../assets/imgs/parade.jpg';
 
@@ -23,7 +23,7 @@ const About = () => {
         </div>
         <div className="image-grid grid grid-cols-2 gap-5 mr-40">
           <img src={zoo} alt="Zoo" className="max-w-full  w-[800px]" />
-          <img src={splashPad} alt="Splash Pad" className="max-w-full w-[500px]" />
+          <img src={hike} alt="hike" className="max-w-full w-[500px]" />
           <img src={popcorn} alt="Popcorn" className="max-w-full w-[500px]" />
           <img src={parade} alt="Parade" className="max-w-full w-[500px]" />
         </div>
