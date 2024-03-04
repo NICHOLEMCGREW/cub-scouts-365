@@ -8,7 +8,7 @@ const EventCard = ({ event }) => (
     <img src={event.image} alt={event.title} className="w-full h-40 object-cover mb-2" />
     <p className="text-lg mb-2">{event.title}</p>
     <p className="text-sm mb-4">{event.location}</p>
-    <a href={event.facebookEventUrl} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
+    <a href={event.infoUrl} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
       View Facebook Event
     </a>
   </div>
