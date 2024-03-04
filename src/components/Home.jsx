@@ -10,7 +10,7 @@ const Home = () => {
         <div className="text-center mb-8 md:mb-0">
           <h1 className="text-5xl font-extrabold leading-tight mb-6">Welcome to Cub Scouts Pack 365</h1>
           <p className="text-lg mb-8 text-gray-500">Explore the world of adventure and learning with us!</p>
-          <Link to="about" smooth={true} duration={500} className="py-2 px-6 border mt-2 bg-[#003f87] text-yellow-400 hover:bg-yellow-400 hover:text-blue-800 rounded-full font-semibold text-lg transition duration-300 ease-in-out cursor-pointer" type="button">
+          <Link to="about" smooth="true" duration={500} className="py-2 px-6 border mt-2 bg-[#003f87] text-yellow-400 hover:bg-yellow-400 hover:text-blue-800 rounded-full font-semibold text-lg transition duration-300 ease-in-out cursor-pointer" type="button">
             Join Pack 365
           </Link>
         </div>

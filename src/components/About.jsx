@@ -18,7 +18,7 @@ const About = () => {
             id magni, maxime sed, aliquam voluptatum voluptates quas possimus. Inventore voluptas nostrum fuga accusantium
             debitis dolorem labore.
           </p>
-          <Link to="about" smooth={true} duration={500} className="py-2 px-6 border mt-2 bg-[#003f87] text-yellow-400 hover:bg-yellow-400 hover:text-blue-800 rounded-full font-semibold text-lg transition duration-300 ease-in-out cursor-pointer" type="button">
+          <Link to="about" smooth="true" duration={500} className="py-2 px-6 border mt-2 bg-[#003f87] text-yellow-400 hover:bg-yellow-400 hover:text-blue-800 rounded-full font-semibold text-lg transition duration-300 ease-in-out cursor-pointer" type="button">
             Learn More
           </Link>
         </div>

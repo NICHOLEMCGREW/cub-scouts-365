@@ -5,6 +5,7 @@ import About from "./components/About";
 import Events from "./components/Events";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import PastEvents from "./components/PastEvents";
 
 const App = () => {
 	const [currentView, setCurrentView] = useState("home");
@@ -15,6 +16,7 @@ const App = () => {
 			<Home />
 			<About />
 			<Events />
+      <PastEvents />
 			<Contact />
 			<Footer />
 		</div>
