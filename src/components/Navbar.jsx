@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="flex text-2xl cursor-pointer items-center gap-2">
           <ScrollLink to="home" smooth="true" duration={500} className="flex items-center text-white hover:text-yellow-400 duration-500 cursor-pointer">
             <img src={logo} alt="Pack 365 Logo" className="w-9 h-9 text-white" />
-            <span className="font-semibold ml-3">Cub Scouts Pack 365</span>
+            <span className="font-semibold ml-1">Cub Scouts Pack 365</span>
           </ScrollLink>
         </div>
         <div
