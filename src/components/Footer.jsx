@@ -6,7 +6,7 @@ import { Link as ScrollLink } from 'react-scroll';
 const Footer = () => {
   return (
     <footer className="min-h-100px py-10 flex flex-col items-center justify-center border-t-2 border-[#ffb225] bg-[#003f87] text-center md:text-left">
-      <ul className="flex items-center mb-4 space-x-4">
+      <ul className="flex items-center mb-4 mt-2 space-x-4">
         {/* Social Icons */}
         <li>
           <a href="https://www.facebook.com/cubscoutpack365yukon?mibextid=dGKdO6" target="_blank" rel="noopener noreferrer" className="text-white text-3xl transition duration-500 hover:transform hover:-translate-y-2">
@@ -41,12 +41,11 @@ const Footer = () => {
         </li>
       </ul>
 
-      {/* Additional HTML */}
-      <hr className="border-white my-4 w-full md:w-auto" />
+      <hr className="md:block border border-gray-400 my-4 mt-10 w-full" />
 
       {/* Copyright Section */}
-      <div className="copyright text-white">
-        <p>&copy; 2024 Pack 365. All rights reserved | Site designed and maintained by <a href="https://nicholemcgrew.netlify.app" target="_blank" className="text-blue-500">Nichole McGrew.</a></p>
+      <div className="copyright text-white mt-2">
+        <p>&copy; 2024 Cub Scouts Pack 365. All rights reserved | Site designed and maintained by <a href="https://nicholemcgrew.netlify.app" target="_blank" className="text-blue-500">Nichole McGrew.</a></p>
       </div>
     </footer>
   );
