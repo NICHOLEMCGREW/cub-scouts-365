@@ -7,14 +7,20 @@ import crossoverRockets from '../assets/imgs/crossoverRockets.jpg';
 import bearsCarnival from '../assets/imgs/bearsCarnival.jpg';
 import derby from '../assets/imgs/derby.jpg';
 import blueGold from '../assets/imgs/blueGold.jpg';
+import stem from '../assets/imgs/stem.jpg';
+import camp from '../assets/imgs/camp.jpg';
+import rain from '../assets/imgs/rain.jpg';
+import service from '../assets/imgs/service.jpg';
+import food from '../assets/imgs/food.jpg';
+import fun from '../assets/imgs/fun.jpg';
 
 
 export const YearlyEventsData = [
   {
-    date: 'Monthly',
+    date: 'Weekly',
     title: 'Cub Scout Pack Meetings',
     description: 'Regular meetings for Cub Scouts to engage in activities.',
-    image: blueGold,
+    image: fun,
     infoUrl: 'https://www.scoutshop.org/blog/blue-gold-banquet-planning-guide.html', // Replace with the correct URL
   },
   {
@@ -35,42 +41,35 @@ export const YearlyEventsData = [
     date: 'July',
     title: 'Cub Scout Day Camps',
     description: 'Outdoor activities, games, and crafts for Cub Scouts.',
-    image: blueGold,
+    image: camp,
     infoUrl: 'https://www.scoutshop.org/blog/blue-gold-banquet-planning-guide.html', // Replace with the correct URL
   },
   {
     date: 'May',
     title: 'Raingutter Regatta',
     description: 'Boat racing event with small handmade boats.',
-    image: blueGold,
+    image: rain,
     infoUrl: 'https://www.scoutshop.org/blog/5-simple-tips-to-help-cub-scouts-get-ready-for-the-raingutter-regatta-.html',
-  },
-  {
-    date: 'September',
-    title: 'Webelos Woods',
-    description: 'Introduction to experiences encountered in Boy Scouts.',
-    image: blueGold,
-    infoUrl: 'https://www.scoutshop.org/blog/blue-gold-banquet-planning-guide.html', // Replace with the correct URL
   },
   {
     date: 'November',
     title: 'Scouting for Food',
     description: 'Annual service project collecting and donating food.',
-    image: blueGold,
+    image: food,
     infoUrl: 'https://www.scoutshop.org/blog/blue-gold-banquet-planning-guide.html', // Replace with the correct URL
   },
   {
     date: 'Ongoing',
     title: 'STEM Activities',
     description: 'Engagement in science, technology, engineering, and math.',
-    image: blueGold,
+    image: stem,
     infoUrl: 'https://www.scoutshop.org/blog/blue-gold-banquet-planning-guide.html', // Replace with the correct URL
   },
   {
     date: 'Ongoing',
     title: 'Service Projects',
     description: 'Participation in community service projects.',
-    image: blueGold,
+    image: service,
     infoUrl: 'https://www.scoutshop.org/blog/blue-gold-banquet-planning-guide.html', // Replace with the correct URL
   },
 ];

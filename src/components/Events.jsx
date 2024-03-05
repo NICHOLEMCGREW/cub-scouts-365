@@ -20,33 +20,24 @@
     };
     
   
-    const EventCard = ({ event }) => (
-        <div className="event shadow-md p-3 rounded-md bg-gray-100 w-[400px]">
-          <img src={event.image} alt={event.title} className="w-full h-32 object-cover rounded-t-md mb-2" />
-          <div className="p-2">
-            <h4 className="text-lg font-bold mb-1">{event.title}</h4>
-            <p className="mb-2 text-sm text-gray-600">{event.description}</p>
-            <p className="text-xs text-gray-700">
-              <strong>Month:</strong> {event.date}
-            </p>
-            <div className="event-details mt-2">
-              {event.infoUrl ? (
-                <a
-                  href={event.infoUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="py-1 px-4 border bg-[#003f87] text-[#ffb225] hover:bg-[#ffb225] hover:text-blue-800 rounded-full font-semibold text-sm transition duration-300 ease-in-out cursor-pointer"
-                >
-                  Learn More
-                </a>
-              ) : null}
-            </div>
-          </div>
-        </div>
-      );
-      
-    
-  
+    // EventCard component
+const EventCard = ({ event }) => (
+  <div className="event shadow-md rounded-md bg-gray-100 w-[400px]">
+    <img
+      src={event.image}
+      alt={event.title}
+      className="w-full h-[250px] object-cover object-center rounded-t-md mb-2"
+    />
+    <div className="p-1">
+      <h4 className="text-lg font-bold mb-1">{event.title}</h4>
+      <p className="mb-2 text-sm text-gray-600">{event.description}</p>
+      {/* <p className="text-xs text-gray-700">
+        <strong>Month:</strong> {event.date}
+      </p> */}
+    </div>
+  </div>
+);
+
   
   export default Events;
 
