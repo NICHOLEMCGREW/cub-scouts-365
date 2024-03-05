@@ -6,8 +6,8 @@
       return (
         <section id="events" className="events events-content text-center min-h-screen m-20">
           <div className="title mb-6">
-            <h1 className="text-[#003f87] text-4xl font-bold mb-4 mt-5">Events</h1>
-            <div className="line mb-7 w-16 border-t-4 border-yellow-400 mx-auto"></div>
+            <h1 className="text-[#003f87] text-5xl font-semibold mb-4 sm:mt-8 md:mt-4">Events</h1>
+            <div className="line mb-7 w-16 border-t-4 border-[#ffb225] mx-auto"></div>
           </div>
     
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -35,7 +35,7 @@
                   href={event.infoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="py-1 px-4 border bg-[#003f87] text-yellow-400 hover:bg-yellow-400 hover:text-blue-800 rounded-full font-semibold text-sm transition duration-300 ease-in-out cursor-pointer"
+                  className="py-1 px-4 border bg-[#003f87] text-[#ffb225] hover:bg-[#ffb225] hover:text-blue-800 rounded-full font-semibold text-sm transition duration-300 ease-in-out cursor-pointer"
                 >
                   Learn More
                 </a>

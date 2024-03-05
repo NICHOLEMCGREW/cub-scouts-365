@@ -13,7 +13,7 @@ const Home = () => {
             to="about"
             smooth="true"
             duration={500}
-            className="py-2 px-6 border mt-2 md:mt-4 bg-[#003f87] text-yellow-400 hover:bg-yellow-400 hover:text-blue-800 rounded-full font-semibold text-md md:text-lg transition duration-300 ease-in-out cursor-pointer"
+            className="py-2 px-6 border mt-2 md:mt-4 bg-[#003f87] text-[#ffb225] hover:bg-[#ffb225] hover:text-blue-800 rounded-full font-semibold text-md md:text-lg transition duration-300 ease-in-out cursor-pointer"
             type="button"
           >
             Join Pack 365
